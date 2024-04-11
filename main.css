@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+img {
+  display: flex;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.container {
+  width: 960px;
+  margin-inline: auto;
+  padding-inline: 20px;
+  
+}
+.hero-list {
+  display: flex;
+  list-style: none;
+  margin-block: 0;
+  padding-left: 0;
+}
+.hero-item {
+  width: 307px;
+  padding: 48px;
+  background-color: #e28625;
+  border-radius: 7px;
+}
+.hero-item:nth-child(2) {
+  background-color:#006971;
+}
+.hero-item:nth-child(2)::before {
+  background-image: url("./images/suv.svg");
+}
+.hero-item:nth-child(3)::before {
+  background-image: url("./images/luxury.svg");
+}
+.hero-item:nth-child(3) {
+  background-color:#004140;
+}
+.hero-item::before {
+  display: block;
+  width: 100px;
+  height: 100px;
+  content: "";
+  background-image: url("./images/sedan.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 64px 40px;
+}
+.hero-title {
+  font-size: 40px;
+  line-height: 47.88px;
+  color: #f2f2f2;
+  margin-block: 0;
+  margin-bottom: 25px;
+}
+.hero-desc {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #fff;
+  margin-block: 0;
+  margin-bottom: 83px;
+}
+.hero-link {
+  display: inline-block;
+  text-decoration-line: none;
+  font-size: 15px;
+  line-height: 25px;
+  color: #e28625;
+  background-color: #f2f2f2;
+  padding: 12px 31px;
+  border-radius: 25px 
+}
+.hero-link:active {
+  box-shadow: 0 0 0 2px #fff;
+  /* border: 2px solid #fff; */
+  color: #fff;
+  background-color:transparent ;
+}
+.link-change {
+  color:#006971;
+}
+.last-link {
+  color: #004140;
+}
